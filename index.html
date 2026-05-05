@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yunied Puig de Dios</title>
+  <style>
+    :root {
+      --bg: #faf8f4;
+      --paper: #ffffff;
+      --text: #1f2430;
+      --muted: #5a6472;
+      --line: #d9dde4;
+      --accent: #1d4e89;
+      --accent-soft: #eef4fb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 56px 24px 80px;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 42px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--line);
+      flex-wrap: wrap;
+    }
+
+    .site-name {
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    .nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .nav a:hover {
+      color: var(--accent);
+    }
+
+    h1, h2, h3 {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: clamp(2.3rem, 5vw, 4rem);
+      line-height: 1.05;
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      font-size: 1.7rem;
+      margin-bottom: 18px;
+      padding-top: 10px;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      margin-top: 28px;
+      margin-bottom: 12px;
+    }
+
+    .intro {
+      margin-bottom: 56px;
+    }
+
+    .subtitle {
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 16px;
+      letter-spacing: 0.01em;
+    }
+
+    .intro p {
+      font-size: 1.08rem;
+      margin: 0 0 14px;
+      max-width: 760px;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      margin-top: 22px;
+      color: var(--muted);
+      font-size: 0.97rem;
+    }
+
+    .meta a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .meta a:hover,
+    .papers a:hover,
+    .simple-link:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 48px;
+    }
+
+    .section-card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 28px 28px 22px;
+    }
+
+    .about-text,
+    .research-text {
+      max-width: 760px;
+    }
+
+    .papers-group {
+      margin-bottom: 26px;
+    }
+
+    .papers {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .papers li {
+      padding: 14px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .papers li:first-child {
+      border-top: none;
+      padding-top: 0;
+    }
+
+    .papers a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .paper-title {
+      font-style: italic;
+      font-weight: 600;
+    }
+
+    .paper-meta {
+      color: var(--muted);
+    }
+
+    .note {
+      font-size: 0.92rem;
+      color: var(--muted);
+      margin-top: 12px;
+    }
+
+    .footer {
+      margin-top: 56px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .simple-link {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        padding: 34px 18px 56px;
+      }
+
+      .section-card {
+        padding: 22px 18px 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <div class="topbar">
+      <div class="site-name">Yunied Puig de Dios</div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#papers">Papers</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+
+    <header class="intro">
+      <div class="subtitle">Mathematician and Deep Learning Researcher</div>
+      <h1>Yunied Puig de Dios</h1>
+      <p>
+        I work in functional analysis and operator theory, especially on the dynamics of linear operators.
+        More recently, my work explores how infinite-dimensional operator theory dynamics inform the
+        theoretical foundations of deep learning, particularly structured representation learning.
+      </p>
+
+      <div class="meta">
+        <span>New York, NY</span>
+        <span>•</span>
+        <a href="mailto:puigdedios@gmail.com">puigdedios@gmail.com</a>
+        <span>•</span>
+        <a href="https://github.com/puigdedios" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <span>•</span>
+        <a href="CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+      </div>
+    </header>
+
+    <section id="about" class="section-card">
+      <h2>About</h2>
+      <div class="about-text">
+        <p>
+          I am a mathematician and deep learning researcher with a Ph.D. in Pure Mathematics, specializing
+          in functional analysis, operator theory, and linear dynamics. My research bridges
+          infinite-dimensional operator theory with the theoretical foundations of deep learning.
+        </p>
+      </div>
+    </section>
+
+    <section id="research" class="section-card">
+      <h2>Research</h2>
+      <div class="research-text">
+        <p>
+          My work lies at the intersection of functional analysis, operator theory, linear dynamics,
+          and theoretical machine learning. I am particularly interested in operator-theoretic methods
+          in machine learning, interpretability, generalization, and structured learning.
+        </p>
+      </div>
+    </section>
+
+    <section id="papers" class="section-card">
+      <h2>Publications and Preprints</h2>
+
+      <!-- Replace the file names below with the exact PDF file names you upload in your papers folder -->
+
+      <div class="papers-group">
+        <h3>Deep Learning</h3>
+        <ul class="papers">
+          <li>
+            Y. Puig,
+            <a class="paper-title" href="papers/A-Principled-and-Interpretable-Orbit-Based-Learning-Framework.pdf" target="_blank" rel="noopener noreferrer">
+              A Principled and Interpretable Orbit-Based Learning Framework
+            </a>,
+            <span class="paper-meta">preprint, submitted to JMLR.</span>
+          </li>
+
+          <li>
+            Y. Puig,
+            <a class="paper-title" href="papers/LoRA-as-a-Degenerate-Case-of-a-Dataset-Relative-Theory-of-Structured-Operator-Adaptation.pdf" target="_blank" rel="noopener noreferrer">
+              LoRA as a Degenerate Case of a Dataset-Relative Theory of Structured Operator Adaptation
+            </a>,
+            <span class="paper-meta">preprint, to be submitted to NeurIPS 2026.</span>
+          </li>
+
+          <li>
+            Y. Puig,
+            <a class="paper-title" href="papers/An-Orbit-based-Topology-of-Learnability.pdf" target="_blank" rel="noopener noreferrer">
+              An Orbit-based Topology of Learnability
+            </a>,
+            <span class="paper-meta">preprint, submitted to JMLR.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="papers-group">
+        <h3>Pure Mathematics</h3>
+        <ul class="papers">
+          <li>
+            O. Martin, Q. Menet, Y. Puig,
+            <span class="paper-title">Disjoint frequently hypercyclic pseudo-shifts</span>,
+            <span class="paper-meta">J. Funct. Anal., 283 (2022), no. 1.</span>
+          </li>
+
+          <li>
+            A. Aksoy, Y. Puig,
+            <span class="paper-title">Ideal of hypercyclic operators that factor through ℓp</span>,
+            <span class="paper-meta">Proc. Amer. Math. Soc., 150 (2022), 691-700.</span>
+          </li>
+
+          <li>
+            O. Martin, Y. Puig,
+            <span class="paper-title">Existence of disjoint frequently hypercyclic operators which fail to be disjoint weakly mixing</span>,
+            <span class="paper-meta">J. Math. Anal. Appl., 500 (2021), no. 1, Paper No. 125106.</span>
+          </li>
+
+          <li>
+            J. Bes, Q. Menet, A. Peris, Y. Puig,
+            <span class="paper-title">Strong transitivity properties for operators</span>,
+            <span class="paper-meta">J. Differential Equations, 266 (2019), no. 2-3, 1313-1337.</span>
+          </li>
+
+          <li>
+            Y. Puig,
+            <span class="paper-title">Linear dynamics and recurrence properties defined via essential idempotents of the Stone-Čech compactification of N</span>,
+            <span class="paper-meta">Ergodic Theory Dynam. Systems, 38 (2018), no. 1, 285-300.</span>
+          </li>
+
+          <li>
+            Y. Puig,
+            <span class="paper-title">A mixing operator T such that (T, T²) is not disjoint transitive</span>,
+            <span class="paper-meta">Studia Math., 237 (3) (2017), 283-296.</span>
+          </li>
+
+          <li>
+            J. Bes, Q. Menet, A. Peris, Y. Puig,
+            <span class="paper-title">Recurrence properties of hypercyclic operators</span>,
+            <span class="paper-meta">Math. Ann., 366 (2016), 545-572.</span>
+          </li>
+
+          <li>
+            Astaiza, W., Barrios, A. J., Chimal-Dzul, H., García, S. R., Lopez de la Luz, J., Moll, V. H., Villamizar, D., &amp; Puig, Y.,
+            <span class="paper-title">Symmetric tensor powers of graphs</span>,
+            <span class="paper-meta">Scientia Series A: Mathematical Sciences, 36, 13-35 (2025).</span>
+          </li>
+
+          <li>
+            Y. Puig,
+            <span class="paper-title">Kriz’s Theorem via dynamics of linear operators</span>,
+            <span class="paper-meta">under review by Trans. AMS.</span>
+          </li>
+
+          <li>
+            Y. Puig,
+            <span class="paper-title">Frequent hypercyclicity and piecewise syndetic recurrence sets</span>,
+            <span class="paper-meta">preprint (available online).</span>
+          </li>
+        </ul>
+      </div>
+
+      <p class="note">
+        For the three deep learning papers above, make sure the PDF filenames in the <code>href</code>
+        match exactly the names of the files you upload into your <code>papers</code> folder.
+      </p>
+    </section>
+
+    <section id="contact" class="section-card">
+      <h2>Contact</h2>
+      <p>
+        Email:
+        <a class="simple-link" href="mailto:puigdedios@gmail.com">puigdedios@gmail.com</a>
+      </p>
+      <p>
+        GitHub:
+        <a class="simple-link" href="https://github.com/puigdedios" target="_blank" rel="noopener noreferrer">
+          github.com/puigdedios
+        </a>
+      </p>
+    </section>
+
+    <div class="footer">
+      © Yunied Puig de Dios
+    </div>
+  </div>
+</body>
+</html>
